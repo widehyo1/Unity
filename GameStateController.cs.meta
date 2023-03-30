@@ -1,0 +1,25 @@
+fileFormatVersion: 2
+guid: 17ae682ac94133f7f89e9902d1988c79
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - smile: {instanceID: 0}
+  - smileSunglass: {instanceID: 0}
+  - smileFrown: {instanceID: 0}
+  - timer0: {instanceID: 0}
+  - timer1: {instanceID: 0}
+  - timer2: {instanceID: 0}
+  - timer3: {instanceID: 0}
+  - timer4: {instanceID: 0}
+  - timer5: {instanceID: 0}
+  - timer6: {instanceID: 0}
+  - timer7: {instanceID: 0}
+  - timer8: {instanceID: 0}
+  - timer9: {instanceID: 0}
+  - difficultyFile: {fileID: 4900000, guid: 3ebaa44eb2d472c6fbb05bfdd8094473, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

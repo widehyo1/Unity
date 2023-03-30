@@ -10,20 +10,15 @@ using CoordinateSystem;
 using RangeSpace;
 using RangeUtilSpace;
 using Range = RangeSpace.Range;
+using CellSpace;
+using GameSpace;
+using GameUtilSpace;
 
 public class GameStateController : MonoBehaviour {
 
-    public bool gameOnGoing = false;
-    public bool gameOver = false;
-
-    public enum Difficulty { EASY, NORMAL, HARD };
-    public Difficulty difficulty;
     public int displayMineNumber = 10;
 
-    public int rowNumber;
-    public int columnNumber;
-    public int mineNumber;
-    public int[][] cellBoard;
+    public MetaInfo metaInfo;
 
     public Sprite smile;
     public Sprite smileSunglass;
@@ -62,18 +57,20 @@ public class GameStateController : MonoBehaviour {
         // 난이도를 선택한다.
         // 세가지 버튼을 UI에서 생성하여 각 버튼에 binding
         // 난이도는 파일을 읽어서 비교한다.
-        DebugLog("=== SetDifficulty start ===");
+        // DebugLog("=== SetDifficulty start ===");
         try {
             using (StreamReader sr = new StreamReader(difficultyFilePath)) {
                 while (!sr.EndOfStream) {
                     string line = sr.ReadLine();
                     string[] values = line.Split(',');
                     if (values[0].Equals(inputDifficulty)) {
-                        difficulty = (Difficulty) Enum.Parse(typeof(Difficulty), inputDifficulty);
+                        Difficulty difficulty = (Difficulty) Enum.Parse(typeof(Difficulty), inputDifficulty);
+                        int rowNumber = Int32.Parse(values[1]);
+                        int columnNumber = Int32.Parse(values[2]);
+                        int mineNumber = Int32.Parse(values[3]);
+                        metaInfo = new MetaInfo(difficulty, rowNumber, columnNumber, mineNumber);
+                        DebugLog(metaInfo);
                         difficultyName = values[0];
-                        rowNumber = Int32.Parse(values[1]);
-                        columnNumber = Int32.Parse(values[2]);
-                        mineNumber = Int32.Parse(values[3]);
                         break;
                     }
                 }
@@ -83,8 +80,8 @@ public class GameStateController : MonoBehaviour {
         }
         difficultyDir = String.Format("{0}/{1}", minesweeperDir, difficultyName);
         recordFileName = String.Format("{0}/{1}/{2}.txt", minesweeperDir, difficultyName, "record_" + difficultyName);
-        DebugLog(difficultyDir, "difficultyDir");
-        DebugLog(recordFileName, "recordFileName");
+        // DebugLog(difficultyDir, "difficultyDir");
+        // DebugLog(recordFileName, "recordFileName");
     }
 
     public void InitCellBoard() {
@@ -114,15 +111,37 @@ public class GameStateController : MonoBehaviour {
     void Start() {
         DebugLog("=== GameStateController start ===");
 
-        SetDifficulty("NORMAL");
+        // SetDifficulty("NORMAL");
+        SetDifficulty("EASY");
         DebugLog(difficultyName);
-        DebugLog(rowNumber);
-        DebugLog(columnNumber);
-        DebugLog(mineNumber);
+        /*
+        int rowNumber = metaInfo.rowNumber;
+        int columnNumber = metaInfo.columnNumber;
 
-        Board gameBoard = new Board(rowNumber - 1, columnNumber - 1);
-        List<TwoDPoint> boardArea = RangeUtil.GetBoardArea(gameBoard);
+        Board board = new Board(rowNumber - 1, columnNumber - 1);
+        List<TwoDPoint> boardArea = RangeUtil.GetBoardArea(board);
         DebugLog(string.Join(", ", boardArea));
+
+        // GameBoard gameBoard = new GameBoard(boardArea);
+        // GameBoard gameBoard = new GameBoard(board);
+        */
+        GameBoard gameBoard = new GameBoard(metaInfo);
+        // DebugLog(gameBoard, "gameBoard");
+
+        TwoDPoint point1 = new TwoDPoint(1, 2);
+        DebugLog(gameBoard.GetCell(point1), "gameBoard.GetCell(point1)");
+
+        GameUtil.InitiateMine(gameBoard, metaInfo.mineNumber);
+        // DebugLog(string.Join(", ", mineDictionary.Keys));
+
+        Dictionary<TwoDPoint, Cell> cellBoard = gameBoard.GetCellBoard();
+        StringBuilder sb = new StringBuilder();
+        foreach(TwoDPoint position in gameBoard.GetCellBoard().Keys) {
+            sb.Append(position.ToString() + ":" + cellBoard[position].cellValue);
+            // DebugLog(position, "position");
+            // DebugLog(cellBoard[position].cellValue, "cellBoard[position].cellValue");
+        }
+        Debug.Log(sb.ToString());
 
         /*
         TwoDPoint point1 = new TwoDPoint(1, 2);
@@ -149,8 +168,8 @@ public class GameStateController : MonoBehaviour {
         */
 
         /*
-        Board gameBoard = new Board(9, 9);
-        DebugLog(gameBoard);
+        Board board = new Board(9, 9);
+        DebugLog(board);
 
         TwoDPoint point1 = new TwoDPoint(0, 0);
         DebugLog(point1);
@@ -171,31 +190,31 @@ public class GameStateController : MonoBehaviour {
         TwoDPoint point9 = new TwoDPoint(9, 9);
         DebugLog(point9);
 
-        Range boardRangeX = gameBoard.GetRangeX();
-        Range boardRangeY = gameBoard.GetRangeY();
+        Range boardRangeX = board.GetRangeX();
+        Range boardRangeY = board.GetRangeY();
         DebugLog(boardRangeX);
         DebugLog(boardRangeY);
 
         List<TwoDPoint> area = RangeUtil.Product(boardRangeX, boardRangeY);
         DebugLog(string.Join(", ", area));
 
-        List<TwoDPoint> area1 = RangeUtil.AdjacentArea(point1, gameBoard);
+        List<TwoDPoint> area1 = RangeUtil.AdjacentArea(point1, board);
         DebugLog(string.Join(", ", area1));
-        List<TwoDPoint> area2 = RangeUtil.AdjacentArea(point2, gameBoard);
+        List<TwoDPoint> area2 = RangeUtil.AdjacentArea(point2, board);
         DebugLog(string.Join(", ", area2));
-        List<TwoDPoint> area3 = RangeUtil.AdjacentArea(point3, gameBoard);
+        List<TwoDPoint> area3 = RangeUtil.AdjacentArea(point3, board);
         DebugLog(string.Join(", ", area3));
-        List<TwoDPoint> area4 = RangeUtil.AdjacentArea(point4, gameBoard);
+        List<TwoDPoint> area4 = RangeUtil.AdjacentArea(point4, board);
         DebugLog(string.Join(", ", area4));
-        List<TwoDPoint> area5 = RangeUtil.AdjacentArea(point5, gameBoard);
+        List<TwoDPoint> area5 = RangeUtil.AdjacentArea(point5, board);
         DebugLog(string.Join(", ", area5));
-        List<TwoDPoint> area6 = RangeUtil.AdjacentArea(point6, gameBoard);
+        List<TwoDPoint> area6 = RangeUtil.AdjacentArea(point6, board);
         DebugLog(string.Join(", ", area6));
-        List<TwoDPoint> area7 = RangeUtil.AdjacentArea(point7, gameBoard);
+        List<TwoDPoint> area7 = RangeUtil.AdjacentArea(point7, board);
         DebugLog(string.Join(", ", area7));
-        List<TwoDPoint> area8 = RangeUtil.AdjacentArea(point8, gameBoard);
+        List<TwoDPoint> area8 = RangeUtil.AdjacentArea(point8, board);
         DebugLog(string.Join(", ", area8));
-        List<TwoDPoint> area9 = RangeUtil.AdjacentArea(point9, gameBoard);
+        List<TwoDPoint> area9 = RangeUtil.AdjacentArea(point9, board);
         DebugLog(string.Join(", ", area9));
         */
 

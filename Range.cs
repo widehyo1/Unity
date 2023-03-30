@@ -6,6 +6,7 @@ using Debug = UnityEngine.Debug;
 
 namespace RangeSpace {
 
+    [Serializable]
     public class Range : IEquatable<Range> {
 
         public int min { get; set; }
@@ -75,6 +76,7 @@ namespace RangeSpace {
         public static bool operator !=(Range r1, Range r2) => !(r1 == r2);
     }
 
+    [Serializable]
     public class RangeX : Range {
 
         public RangeX(int min, int max) : base(min, max)  {
@@ -90,6 +92,7 @@ namespace RangeSpace {
         }
     }
 
+    [Serializable]
     public class RangeY : Range {
 
         public RangeY(int min, int max) : base(min, max) {
@@ -105,6 +108,7 @@ namespace RangeSpace {
         }
     }
 
+    [Serializable]
     public class Board {
 
         public int boardX { get; set; }

@@ -10,7 +10,7 @@ namespace RangeUtilSpace {
 
     public static class RangeUtil {
 
-        public static Range GetAdjacentRange(int index, Range range) {
+        private static Range GetAdjacentRange(int index, Range range) {
             Debug.Assert(range.Contains(index), "invalid index for given range");
             return new Range(range.Backward(index), range.Forward(index));
         }
