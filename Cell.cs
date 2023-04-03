@@ -18,10 +18,53 @@ namespace CellSpace {
 
         public TwoDPoint position { get; set; }
         public DisplayType displayType = DisplayType.Default;
-        public int cellValue { get; set; }
+        private int cellValue { get; set; }
+        private bool isCorrect = false;
 
-        public void SetDisplayType (DisplayType displayType) {
-            this.displayType = displayType;
+        public void RigthClick() {
+
+            switch (displayType) {
+                case DisplayType.Undiscovered:
+                    displayType = DisplayType.Flag;
+                    break;
+                case DisplayType.Flag:
+                    displayType = DisplayType.QuestionMark;
+                    break;
+                case DisplayType.QuestionMark:
+                    displayType = DisplayType.Undiscovered;
+                    break;
+                case DisplayType.Discovered:
+                    break;
+                case DisplayType.Defalut:
+                    break;
+            }
+
+        }
+
+        public bool IsUndiscovered() {
+            return displayType == DisplayType.Undiscovered
+                || displayType == DisplayType.QuestionMark
+                || displayType == DisplayType.Defalut;
+        }
+
+        public bool IsFlag() {
+            return displayType == DisplayType.Flag;
+        }
+
+        public bool IsDiscovered() {
+            return displayType == DisplayType.Discovered;
+        }
+
+        public bool GetCorrectness() {
+            return isCorrect;
+        }
+
+        public void SetCorrectness(bool isCorrect) {
+            this.isCorrect = isCorrect;
+        }
+
+        public int GetCellValue() {
+            return cellValue;
         }
 
         public void SetCellValue (int cellValue) {
@@ -34,15 +77,17 @@ namespace CellSpace {
 
         public Cell(TwoDPoint position) {
             this.position = position;
-            this.displayType = DisplayType.Undiscovered;
+            this.displayType = DisplayType.Defalut;
             this.cellValue = 0;
+            this.isCorrect = false;
         }
 
         public override string ToString() {
-            return String.Format("position: {0}, displayType: {1}, cellValue: {2}",
+            return String.Format("position: {0}, displayType: {1}, cellValue: {2}, isCorrect: {3}",
                     position.ToString(),
                     displayType.ToString(),
-                    cellValue);
+                    cellValue,
+                    isCorrect);
         }
 
     }

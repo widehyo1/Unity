@@ -3,7 +3,7 @@ using System;
 namespace CoordinateSystem {
 
     [Serializable]
-    public struct TwoDPoint : IEquatable<TwoDPoint> {
+    public readonly struct TwoDPoint : IEquatable<TwoDPoint> {
 
         public int x { get; set; }
         public int y { get; set; }

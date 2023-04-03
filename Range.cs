@@ -123,6 +123,19 @@ namespace RangeSpace {
 
         }
 
+        public bool Contains(TwoDPoint position) {
+            return this.GetRangeX().Contains(position.x) && this.GetRangeY().Contains(position.y);
+        }
+
+        public bool Contains(List<TwoDPoint> area) {
+            foreach(TwoDPoint position in area) {
+                if (!Contains(position)) {
+                    return false;
+                }
+            }
+            return true;
+        }
+
         public Range GetRangeX() {
             return new RangeX(this.boardX);
         }
