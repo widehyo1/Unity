@@ -128,20 +128,44 @@ public class GameStateController : MonoBehaviour {
         GameBoard gameBoard = new GameBoard(metaInfo);
         // DebugLog(gameBoard, "gameBoard");
 
+        GameUtil.SetGameBoard(gameBoard);
+
         TwoDPoint point1 = new TwoDPoint(1, 2);
         DebugLog(gameBoard.GetCell(point1), "gameBoard.GetCell(point1)");
 
-        GameUtil.InitiateMine(gameBoard, metaInfo.mineNumber);
+        GameUtil.InitiateMine(metaInfo.mineNumber);
         // DebugLog(string.Join(", ", mineDictionary.Keys));
 
         Dictionary<TwoDPoint, Cell> cellBoard = gameBoard.GetCellBoard();
         StringBuilder sb = new StringBuilder();
+        int counter = 0;
         foreach(TwoDPoint position in gameBoard.GetCellBoard().Keys) {
-            sb.Append(position.ToString() + ":" + cellBoard[position].cellValue);
+            counter++;
+            sb.Append(position.ToString() + ":" + cellBoard[position].GetCellValue());
+            if (counter % metaInfo.rowNumber == 0) {
+                sb.Append("\n");
+            }
             // DebugLog(position, "position");
             // DebugLog(cellBoard[position].cellValue, "cellBoard[position].cellValue");
         }
         Debug.Log(sb.ToString());
+
+        Dictionary<TwoDPoint, Cell> cellBoard2 = gameBoard.GetCellBoard();
+        StringBuilder sb2 = new StringBuilder();
+        int counter2 = 0;
+        foreach(TwoDPoint position in cellBoard2.Keys) {
+            counter2++;
+            sb2.Append(position.ToString() + ":" + cellBoard2[position].GetCellValue());
+            if (counter2 % metaInfo.rowNumber == 0) {
+                sb2.Append("\n");
+            }
+            // DebugLog(position, "position");
+            // DebugLog(cellBoard[position].cellValue, "cellBoard[position].cellValue");
+        }
+        Debug.Log(sb2.ToString());
+
+        GameUtil.StartGame();
+        GameUtil.GetCellBoard();
 
         /*
         TwoDPoint point1 = new TwoDPoint(1, 2);

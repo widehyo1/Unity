@@ -35,7 +35,7 @@ namespace CellSpace {
                     break;
                 case DisplayType.Discovered:
                     break;
-                case DisplayType.Defalut:
+                case DisplayType.Default:
                     break;
             }
 
@@ -44,7 +44,7 @@ namespace CellSpace {
         public bool IsUndiscovered() {
             return displayType == DisplayType.Undiscovered
                 || displayType == DisplayType.QuestionMark
-                || displayType == DisplayType.Defalut;
+                || displayType == DisplayType.Default;
         }
 
         public bool IsFlag() {
@@ -77,7 +77,7 @@ namespace CellSpace {
 
         public Cell(TwoDPoint position) {
             this.position = position;
-            this.displayType = DisplayType.Defalut;
+            this.displayType = DisplayType.Default;
             this.cellValue = 0;
             this.isCorrect = false;
         }

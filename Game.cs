@@ -1,4 +1,5 @@
 using System;
+using System.Text;
 using System.Linq;
 using System.Collections;
 using System.Collections.Generic;
@@ -7,6 +8,7 @@ using CellSpace;
 using Range = RangeSpace.Range;
 using RangeSpace;
 using RangeUtilSpace;
+using UnityEngine;
 
 
 namespace GameSpace {
@@ -52,7 +54,32 @@ namespace GameSpace {
         public Board board = null;
 
         public void SetCellBoard(Dictionary<TwoDPoint, Cell> cellBoard) {
+
+            Debug.Log("=== SetCellBoard start ===");
+            Debug.Log("cellBoard param");
+            StringBuilder sb = new StringBuilder();
+            int counter = 0;
+            foreach (TwoDPoint position in cellBoard.Keys) {
+                counter++;
+                sb.Append(position.ToString() + ":" + cellBoard[position].GetCellValue());
+                if (counter % (board.boardX + 1) == 0) {
+                    sb.Append("\n");
+                }
+            }
+            Debug.Log(sb.ToString());
             this.cellBoard = cellBoard;
+
+            Debug.Log("this.cellBoard");
+            StringBuilder sb2 = new StringBuilder();
+            int counter2 = 0;
+            foreach (TwoDPoint position in this.cellBoard.Keys) {
+                counter2++;
+                sb2.Append(position.ToString() + ":" + this.cellBoard[position].GetCellValue());
+                if (counter2 % (board.boardX + 1) == 0) {
+                    sb2.Append("\n");
+                }
+            }
+            Debug.Log(sb2.ToString());
         }
 
         public Dictionary<TwoDPoint, Cell> GetCellBoard() {

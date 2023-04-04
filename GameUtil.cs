@@ -1,4 +1,5 @@
 using System;
+using System.Text;
 using System.IO;
 using System.Collections;
 using System.Collections.Generic;
@@ -10,6 +11,7 @@ using CellSpace;
 using UnityEngine;
 using Random = System.Random;
 using Debug = UnityEngine.Debug;
+using Range = RangeSpace.Range;
 using System.Runtime.Serialization.Formatters.Binary;
 
 namespace GameUtilSpace {
@@ -18,25 +20,52 @@ namespace GameUtilSpace {
         BeforeStart,
         OnGoing,
         Win,
-        Gameover
+        GameOver
     }
 
     public static class GameUtil {
 
-        public GameState gameState = GameState.BeforeStart;
-        public GameBoard gameBoard;
-        private Board board;
-        private Dictionary<TwoDPoint, Cell> cellBoard;
+        public static GameState gameState = GameState.BeforeStart;
+        public static GameBoard gameBoard;
+        private static Board board;
+        private static Dictionary<TwoDPoint, Cell> cellBoard;
 
-        public int mineNumber = 0;
-        public int flagNumber = 0;
-        public int correctFlagNumber = 0;
+        public static int mineNumber = 0;
+        public static int flagNumber = 0;
+        public static int correctFlagNumber = 0;
 
-        public static GameUtil(GameBoard gameBoard) {
-            this.gameBoard = gameBoard;
-            this.board = gameBoard.GetBoard();
-            this.cellBoard = gameBoard.GetCellBoard();
-            this.gameState = GameState.BeforeStart;
+        public static GameBoard GetGameBoard() {
+            return gameBoard;
+        }
+
+        public static Board GetBoard() {
+            return board;
+        }
+
+        public static Dictionary<TwoDPoint, Cell> GetCellBoard() {
+            return cellBoard;
+        }
+
+        public static void SetGameBoard(GameBoard paramGameBoard) {
+            gameBoard = paramGameBoard;
+            board = paramGameBoard.GetBoard();
+            cellBoard = paramGameBoard.GetCellBoard();
+            gameState = GameState.BeforeStart;
+        }
+
+        public static void StartGame() {
+            gameState = GameState.OnGoing;
+            foreach (TwoDPoint position in RangeUtil.GetBoardArea(board)) {
+                cellBoard[position].displayType = DisplayType.Undiscovered;
+            }
+            // timer start
+        }
+
+        static GameUtil() {
+            gameBoard = new GameBoard(new Board(0, 0));
+            board = gameBoard.GetBoard();
+            cellBoard = gameBoard.GetCellBoard();
+            gameState = GameState.BeforeStart;
         }
 
         public static void PrintCellDisplay() {
@@ -45,7 +74,7 @@ namespace GameUtilSpace {
             Range ry = board.GetRangeY();
             for (int y = ry.min; y <= ry.max; y++) {
 
-                foreach (int x = rx.min; x <= rx.max; x++) {
+                for (int x = rx.min; x <= rx.max; x++) {
                     TwoDPoint position = new TwoDPoint(x, y);
                     sb.Append(String.Format("{0}", cellBoard[position].displayType));
                     sb.Append(" ");
@@ -57,18 +86,15 @@ namespace GameUtilSpace {
         }
 
         public static void PrintCellValue() {
+            Debug.Log("=== PrintCellValue start ===");
             StringBuilder sb = new StringBuilder();
-            Range rx = board.GetRangeX();
-            Range ry = board.GetRangeY();
-            for (int y = ry.min; y <= ry.max; y++) {
-
-                foreach (int x = rx.min; x <= rx.max; x++) {
-                    TwoDPoint position = new TwoDPoint(x, y);
-                    sb.Append(String.Format("{0}", cellBoard[position].GetCellValue));
-                    sb.Append(" ");
+            int counter = 0;
+            foreach (TwoDPoint position in cellBoard.Keys) {
+                counter++;
+                sb.Append(position.ToString() + ":" + cellBoard[position].GetCellValue());
+                if (counter % (board.boardX + 1) == 0) {
+                    sb.Append("\n");
                 }
-                sb.Append("\n");
-
             }
             Debug.Log(sb.ToString());
         }
@@ -79,18 +105,20 @@ namespace GameUtilSpace {
 
         }
 
-        public static void InitiateMine(int mineNumber) {
+        public static void InitiateMine(int paramMineNumber) {
 
             ResetCellBoard();
 
-            this.mineNumber = mineNumber;
+            mineNumber = paramMineNumber;
             flagNumber = 0;
             correctFlagNumber = 0;
 
             gameState = GameState.BeforeStart;
 
             Dictionary<TwoDPoint, Cell> mineDictionary = PlantMine(mineNumber);
+            PrintCellValue();
             ComputeCell(mineDictionary);
+            PrintCellValue();
             EvaluateBoard();
 
         }
@@ -98,7 +126,7 @@ namespace GameUtilSpace {
         public static void EvaluateBoard() {
 
             foreach (TwoDPoint position in RangeUtil.GetBoardArea(board)) {
-                Evaluate(cellBoard[position], gameBoard);
+                Evaluate(cellBoard[position]);
             }
 
         }
@@ -116,7 +144,7 @@ namespace GameUtilSpace {
         public static bool Evaluate(Cell cell) {
             Debug.Assert(board.Contains(cell.position), "gameBoard must contain the cell");
 
-            List<TwoDPoint> adjacentArea = RangeUtil.AdjacentArea(cell.position);
+            List<TwoDPoint> adjacentArea = RangeUtil.AdjacentArea(cell.position, board);
             
             int cellValue = cell.GetCellValue();
             if (cellValue == -1) {
@@ -138,7 +166,7 @@ namespace GameUtilSpace {
         }
 
         private static bool CorrectFlag(Cell cell) {
-            return cell.displayType == DisplayType.Flag && cell.GetCellValue == -1;
+            return cell.displayType == DisplayType.Flag && cell.GetCellValue() == -1;
         }
 
         /*
@@ -155,6 +183,8 @@ namespace GameUtilSpace {
          *
          */
 
+
+        /*
         public static void Expand(Cell cell) {
             int cellValue = cell.GetCellValue();
             if (cellValue == -1) {
@@ -180,23 +210,24 @@ namespace GameUtilSpace {
                     // gameOver
                     if (cellBoard[position].displayType == DisplayType.Flag) {
                         Debug.Log(String.Format("position: {0}is incorrect Flag, gameOver", position.ToString()));
-                        gameOver();
+                        GameOver();
                         return;
                     }
                 }
             }
 
             foreach (TwoDPoint nextStepCell in nextStep) {
-                Expand(cellBoard(cellBoard[nextStepCell));
+                Expand(cellBoard(cellBoard[nextStepCell]));
             }
 
         }
+        */
 
         private static List<TwoDPoint> GetTargetArea(Cell cell) {
             List<TwoDPoint> targetArea = new List<TwoDPoint>();
             foreach (TwoDPoint position in RangeUtil.AdjacentArea(cell.position, board)) {
                 if (cellBoard[position].displayType != DisplayType.Discovered) {
-                    targetArea.Add();
+                    targetArea.Add(position);
                 }
             }
             return targetArea;
@@ -315,7 +346,7 @@ namespace GameUtilSpace {
         }
         */
 
-        private static void ComputeCell(GameBoard gameBoard, Dictionary<TwoDPoint, Cell> mineDictionary) {
+        private static void ComputeCell(Dictionary<TwoDPoint, Cell> mineDictionary) {
 
             Dictionary<TwoDPoint, Cell> cloneBoard = cellBoard.DeepClone();
 
@@ -375,7 +406,11 @@ namespace GameUtilSpace {
 
                 cloneBoard[position] = mineCell;
                 ++counter;
+                Debug.Log(mineCell);
+                Debug.Log(counter);
             }
+
+            Debug.Log(cloneBoard);
 
             gameBoard.SetCellBoard(cloneBoard);
             return mineDictionary;

@@ -5,8 +5,8 @@ namespace CoordinateSystem {
     [Serializable]
     public readonly struct TwoDPoint : IEquatable<TwoDPoint> {
 
-        public int x { get; set; }
-        public int y { get; set; }
+        public int x { get; }
+        public int y { get; }
 
         public TwoDPoint(int paramX, int paramY) : this() {
             x = paramX;
