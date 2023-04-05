@@ -68,31 +68,39 @@ namespace GameUtilSpace {
             gameState = GameState.BeforeStart;
         }
 
+        public static void PrintCellCorrect() {
+            StringBuilder sb = new StringBuilder();
+            int counter = 0;
+            foreach (TwoDPoint position in cellBoard.Keys) {
+                counter++;
+                sb.Append(position.ToString() + ":" + cellBoard[position].GetCorrectness() + "\t");
+                if (counter % (board.boardY + 1) == 0) {
+                    sb.Append("\n");
+                }
+            }
+            Debug.Log(sb.ToString());
+        }
+
         public static void PrintCellDisplay() {
             StringBuilder sb = new StringBuilder();
-            Range rx = board.GetRangeX();
-            Range ry = board.GetRangeY();
-            for (int y = ry.min; y <= ry.max; y++) {
-
-                for (int x = rx.min; x <= rx.max; x++) {
-                    TwoDPoint position = new TwoDPoint(x, y);
-                    sb.Append(String.Format("{0}", cellBoard[position].displayType));
-                    sb.Append(" ");
+            int counter = 0;
+            foreach (TwoDPoint position in cellBoard.Keys) {
+                counter++;
+                sb.Append(position.ToString() + ":" + cellBoard[position].displayType + "\t");
+                if (counter % (board.boardY + 1) == 0) {
+                    sb.Append("\n");
                 }
-                sb.Append("\n");
-
             }
             Debug.Log(sb.ToString());
         }
 
         public static void PrintCellValue(Dictionary<TwoDPoint, Cell> cellBoard) {
-            Debug.Log("=== PrintCellValue(Dictionary<TwoDPoint, Cell> cellBoard) start ===");
             StringBuilder sb = new StringBuilder();
             int counter = 0;
             foreach (TwoDPoint position in cellBoard.Keys) {
                 counter++;
-                sb.Append(position.ToString() + ":" + cellBoard[position].GetCellValue());
-                if (counter % (board.boardX + 1) == 0) {
+                sb.Append(position.ToString() + ":" + cellBoard[position].GetCellValue() + "\t");
+                if (counter % (board.boardY + 1) == 0) {
                     sb.Append("\n");
                 }
             }
@@ -100,13 +108,12 @@ namespace GameUtilSpace {
         }
 
         public static void PrintCellValue() {
-            Debug.Log("=== PrintCellValue() start ===");
             StringBuilder sb = new StringBuilder();
             int counter = 0;
             foreach (TwoDPoint position in cellBoard.Keys) {
                 counter++;
-                sb.Append(position.ToString() + ":" + cellBoard[position].GetCellValue());
-                if (counter % (board.boardX + 1) == 0) {
+                sb.Append(position.ToString() + ": " + cellBoard[position].GetCellValue() + "\t");
+                if (counter % (board.boardY + 1) == 0) {
                     sb.Append("\n");
                 }
             }
@@ -130,9 +137,7 @@ namespace GameUtilSpace {
             gameState = GameState.BeforeStart;
 
             Dictionary<TwoDPoint, Cell> mineDictionary = PlantMine(mineNumber);
-            PrintCellValue();
             ComputeCell(mineDictionary);
-            PrintCellValue();
             EvaluateBoard();
 
         }
@@ -196,22 +201,21 @@ namespace GameUtilSpace {
          *
          *
          */
-
-
-        /*
         public static void Expand(Cell cell) {
             int cellValue = cell.GetCellValue();
             if (cellValue == -1) {
+                Debug.Log("cellValue == -1");
                 return;
             }
-
             List<TwoDPoint> targetArea = GetTargetArea(cell);
             if (targetArea.Count == 0) {
+                Debug.Log("targetArea.Count == 0");
                 return;
             }
-
+            Debug.Log("=== flag ===");
             List<TwoDPoint> nextStep = new List<TwoDPoint>();
             if (Evaluate(cell)) {
+                Debug.Log("Evaluate(cell)");
                 foreach (TwoDPoint position in RangeUtil.AdjacentArea(cell.position, board)) {
                     if (cellBoard[position].displayType != DisplayType.Flag) {
                         cellBoard[position].displayType = DisplayType.Discovered;
@@ -219,6 +223,7 @@ namespace GameUtilSpace {
                     }
                 }
             } else {
+                Debug.Log("else");
                 foreach (TwoDPoint position in RangeUtil.AdjacentArea(cell.position, board)) {
                     // incorrect cell의 인접영역에 Flag가 있다면 잘못 설정한 Flag
                     // gameOver
@@ -229,13 +234,12 @@ namespace GameUtilSpace {
                     }
                 }
             }
-
             foreach (TwoDPoint nextStepCell in nextStep) {
-                Expand(cellBoard(cellBoard[nextStepCell]));
+                Debug.Log("foreach (TwoDPoint nextStepCell in nextStep)");
+                Debug.Log(nextStepCell.ToString());
+                Expand(cellBoard[nextStepCell]);
             }
-
         }
-        */
 
         private static List<TwoDPoint> GetTargetArea(Cell cell) {
             List<TwoDPoint> targetArea = new List<TwoDPoint>();
@@ -247,122 +251,7 @@ namespace GameUtilSpace {
             return targetArea;
         }
 
-
-
-
-        /*
-        // 지정한 셀에 대하여 더블클릭을 했다고 가정했을 때 동작하는 메서드
-        // 지정한 셀이 지뢰이면 아무일도 일어나지 않는다(셀 표시형식에 관계없이)
-        //
-        //    cellValue     displayType    isCorrect      what occurs     processType
-        //       -1                                          nothing       통과
-        //      value           Flag         false          gameover       게임오버
-        //      value          !Flag          true          nextStep       주변을 조사
-        //      value          !Flag         false           nothing       다시 찾지 않음
-        public static void Expand(Cell cell) {
-
-            int cellValue = cell.GetCellValue();
-            // 지뢰에 더블클릭시 아무것도 일어나지 않는다.
-            if (cellValue == -1) {
-                return;
-            }
-
-            // 지뢰가 아닌 깃발에 더블클릭시 게임오버된다.
-            if (cell.IsFlag() && cellValue != -1) {
-                GameOver();
-                return;
-            }
-
-            Dictionary<TwoDPoint, Cell> targetArea = new Dictionary<TwoDPoint, Cell>();
-            Dictionary<TwoDPoint, Cell> doneArea = new Dictionary<TwoDPoint, Cell>();
-
-            if (cell.IsDiscovered()) {
-                // 드러난 셀의 인접한 영역에 미확인 지뢰가 있다면 아무것도 일어나지 않는다.
-                if(!cell.GetCorrectness()) {
-                    return;
-                } else {
-                    // 드러난 셀의 인접한 지뢰를 모두 찾았다면 지뢰를 제외한 인접 셀을 드러낸다.
-                    // 1. 자신을 조사완료 영역에 추가한다.
-                    // 2. 인접 셀 영역을 타겟 영역에 추가한다.
-                    // 3.
-
-                    doneArea.Add(cell.position, cell);
-                    bool nextStep = false;
-                    foreach (TwoDPoint position in RangeUtil.AdjacentArea(cell.position, board)) {
-                        targetArea.Add(position, cellBoard[position]);
-                        if (cellBoard[position].GetCorrectness()) {
-                            nextStep = true;
-                        }
-
-                    }
-
-                    if (nextStep) {
-
-                    }
-
-                }
-
-            }
-
-
-            // while (true) {
-
-                // List<TwoDPoint> expandArea = FindAdjacentCorrectArea(cell, gameBoard);
-
-                // if (expandArea.Count == 0) {
-                    // break;
-                // }
-
-                // if (checkList
-
-            // }
-
-
-        }
-
-        private static List<TwoDPoint> FindAdjacentCorrectArea(Cell cell) {
-
-            List<TwoDPoint> adjacentCorrectArea = new List<TwoDPoint>();
-            
-            foreach (TwoDPoint position in RangeUtil.AdjacentArea(cell, board)) {
-                if (cellBoard[position].GetCorrectness()) {
-                    adjacentCorrectArea.Add(cellBoard[position]);
-                }
-            }
-            return adjacentCorrectArea;
-        }
-
-        public static bool GoNextStep(Cell cell) {
-
-            foreach (TwoDPoint position in RangeUtil.AdjacentArea(cell.position, board)) {
-               if (cellBoard[position].GetCellValue() == -1) {
-                   continue;
-               }
-
-               if (cell.GetCorrectness()) {
-                   return true;
-               }
-            }
-            return false;
-        }
-
-        public static void Reveal(List<TwoDPoint> area) {
-            Debug.Assert(board.Contains(area), "gameBoard must contain area");
-
-            Dictionary<TwoDPoint, Cell> cloneBoard = cellBoard.DeepClone();
-
-            foreach (TwoDPoint position in area) {
-                cloneBoard[position].SetDisplayType(DisplayType.Discovered);
-            }
-
-            gameBoard.SetCellBoard(cloneBoard);
-
-        }
-        */
-
         private static void ComputeCell(Dictionary<TwoDPoint, Cell> mineDictionary) {
-            Debug.Log("=== ComputeCell start ===");
-            PrintCellValue();
 
             Dictionary<TwoDPoint, Cell> cloneBoard = cellBoard.DeepClone();
 
@@ -374,10 +263,6 @@ namespace GameUtilSpace {
                 foreach (TwoDPoint position in mineDetectionArea) {
 
                     if (mineDictionary.TryGetValue(position, out Cell cell)) {
-                        Debug.Log("===================================================");
-                        Debug.Log("mineDictionary.TryGetValue(position, out Cell cell)");
-                        Debug.Log(cell.ToString());
-                        Debug.Log("===================================================");
                         continue;
                     } else {
                         cloneBoard[position].SetCellValueForward();
@@ -386,10 +271,6 @@ namespace GameUtilSpace {
             }
             gameBoard.SetCellBoard(cloneBoard);
             cellBoard = gameBoard.GetCellBoard();
-
-            PrintCellValue();
-
-            Debug.Log("=== ComputeCell end ===");
         }
 
         private static Dictionary<TwoDPoint, Cell> PlantMine(int mineNumber) {
@@ -429,13 +310,7 @@ namespace GameUtilSpace {
 
                 cloneBoard[position] = mineCell;
                 ++counter;
-                Debug.Log(mineCell);
-                Debug.Log(counter);
             }
-
-            PrintCellValue(cellBoard);
-            Debug.Log("=== Flag ===");
-            PrintCellValue(cloneBoard);
 
             gameBoard.SetCellBoard(cloneBoard);
             cellBoard = gameBoard.GetCellBoard();

@@ -1,0 +1,1386 @@
+=== GameStateController start ===
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GameStateController:DebugLog (object,string) (at Assets/Scripts/GameStateController.cs:53)
+GameStateController:Start () (at Assets/Scripts/GameStateController.cs:112)
+
+(Filename: Assets/Scripts/GameStateController.cs Line: 53)
+
+metaInfo::ToString() difficulty: EASY, rowNumber: 9, columnNumber: 9, mineNumber: 10
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GameStateController:DebugLog (object,string) (at Assets/Scripts/GameStateController.cs:53)
+GameStateController:SetDifficulty (string) (at Assets/Scripts/GameStateController.cs:72)
+GameStateController:Start () (at Assets/Scripts/GameStateController.cs:115)
+
+(Filename: Assets/Scripts/GameStateController.cs Line: 53)
+
+EASY
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GameStateController:DebugLog (object,string) (at Assets/Scripts/GameStateController.cs:53)
+GameStateController:Start () (at Assets/Scripts/GameStateController.cs:116)
+
+(Filename: Assets/Scripts/GameStateController.cs Line: 53)
+
+(0, 0): 0	(0, 1): 0	(0, 2): 0	(0, 3): 0	(0, 4): 1	(0, 5): 1	(0, 6): 2	(0, 7): 1	(0, 8): 1	
+(1, 0): 1	(1, 1): 1	(1, 2): 0	(1, 3): 0	(1, 4): 1	(1, 5): -1	(1, 6): 2	(1, 7): -1	(1, 8): 1	
+(2, 0): -1	(2, 1): 1	(2, 2): 1	(2, 3): 1	(2, 4): 2	(2, 5): 1	(2, 6): 2	(2, 7): 1	(2, 8): 1	
+(3, 0): 1	(3, 1): 1	(3, 2): 2	(3, 3): -1	(3, 4): 2	(3, 5): 0	(3, 6): 0	(3, 7): 0	(3, 8): 0	
+(4, 0): 0	(4, 1): 0	(4, 2): 2	(4, 3): -1	(4, 4): 2	(4, 5): 0	(4, 6): 0	(4, 7): 0	(4, 8): 0	
+(5, 0): 1	(5, 1): 2	(5, 2): 3	(5, 3): 2	(5, 4): 1	(5, 5): 0	(5, 6): 0	(5, 7): 0	(5, 8): 0	
+(6, 0): 1	(6, 1): -1	(6, 2): -1	(6, 3): 3	(6, 4): 2	(6, 5): 1	(6, 6): 1	(6, 7): 0	(6, 8): 0	
+(7, 0): 1	(7, 1): 3	(7, 2): -1	(7, 3): -1	(7, 4): 2	(7, 5): -1	(7, 6): 1	(7, 7): 0	(7, 8): 0	
+(8, 0): 0	(8, 1): 1	(8, 2): 2	(8, 3): 2	(8, 4): 2	(8, 5): 1	(8, 6): 1	(8, 7): 0	(8, 8): 0	
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GameUtilSpace.GameUtil:PrintCellValue () (at Assets/Scripts/GameUtil.cs:120)
+GameStateController:Start () (at Assets/Scripts/GameStateController.cs:132)
+
+(Filename: Assets/Scripts/GameUtil.cs Line: 120)
+
+(0, 0):Default	(0, 1):Default	(0, 2):Default	(0, 3):Default	(0, 4):Default	(0, 5):Default	(0, 6):Default	(0, 7):Default	(0, 8):Default	
+(1, 0):Default	(1, 1):Default	(1, 2):Default	(1, 3):Default	(1, 4):Default	(1, 5):Default	(1, 6):Default	(1, 7):Default	(1, 8):Default	
+(2, 0):Default	(2, 1):Default	(2, 2):Default	(2, 3):Default	(2, 4):Default	(2, 5):Default	(2, 6):Default	(2, 7):Default	(2, 8):Default	
+(3, 0):Default	(3, 1):Default	(3, 2):Default	(3, 3):Default	(3, 4):Default	(3, 5):Default	(3, 6):Default	(3, 7):Default	(3, 8):Default	
+(4, 0):Default	(4, 1):Default	(4, 2):Default	(4, 3):Default	(4, 4):Default	(4, 5):Default	(4, 6):Default	(4, 7):Default	(4, 8):Default	
+(5, 0):Default	(5, 1):Default	(5, 2):Default	(5, 3):Default	(5, 4):Default	(5, 5):Default	(5, 6):Default	(5, 7):Default	(5, 8):Default	
+(6, 0):Default	(6, 1):Default	(6, 2):Default	(6, 3):Default	(6, 4):Default	(6, 5):Default	(6, 6):Default	(6, 7):Default	(6, 8):Default	
+(7, 0):Default	(7, 1):Default	(7, 2):Default	(7, 3):Default	(7, 4):Default	(7, 5):Default	(7, 6):Default	(7, 7):Default	(7, 8):Default	
+(8, 0):Default	(8, 1):Default	(8, 2):Default	(8, 3):Default	(8, 4):Default	(8, 5):Default	(8, 6):Default	(8, 7):Default	(8, 8):Default	
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GameUtilSpace.GameUtil:PrintCellDisplay () (at Assets/Scripts/GameUtil.cs:94)
+GameStateController:Start () (at Assets/Scripts/GameStateController.cs:133)
+
+(Filename: Assets/Scripts/GameUtil.cs Line: 94)
+
+(0, 0):True	(0, 1):True	(0, 2):True	(0, 3):True	(0, 4):False	(0, 5):False	(0, 6):False	(0, 7):False	(0, 8):False	
+(1, 0):False	(1, 1):False	(1, 2):True	(1, 3):True	(1, 4):False	(1, 5):False	(1, 6):False	(1, 7):False	(1, 8):False	
+(2, 0):False	(2, 1):False	(2, 2):False	(2, 3):False	(2, 4):False	(2, 5):False	(2, 6):False	(2, 7):False	(2, 8):False	
+(3, 0):False	(3, 1):False	(3, 2):False	(3, 3):False	(3, 4):False	(3, 5):True	(3, 6):True	(3, 7):True	(3, 8):True	
+(4, 0):True	(4, 1):True	(4, 2):False	(4, 3):False	(4, 4):False	(4, 5):True	(4, 6):True	(4, 7):True	(4, 8):True	
+(5, 0):False	(5, 1):False	(5, 2):False	(5, 3):False	(5, 4):False	(5, 5):True	(5, 6):True	(5, 7):True	(5, 8):True	
+(6, 0):False	(6, 1):False	(6, 2):False	(6, 3):False	(6, 4):False	(6, 5):False	(6, 6):False	(6, 7):True	(6, 8):True	
+(7, 0):False	(7, 1):False	(7, 2):False	(7, 3):False	(7, 4):False	(7, 5):False	(7, 6):False	(7, 7):True	(7, 8):True	
+(8, 0):True	(8, 1):False	(8, 2):False	(8, 3):False	(8, 4):False	(8, 5):False	(8, 6):False	(8, 7):True	(8, 8):True	
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GameUtilSpace.GameUtil:PrintCellCorrect () (at Assets/Scripts/GameUtil.cs:81)
+GameStateController:Start () (at Assets/Scripts/GameStateController.cs:134)
+
+(Filename: Assets/Scripts/GameUtil.cs Line: 81)
+
+(0, 0): 0	(0, 1): 0	(0, 2): 0	(0, 3): 0	(0, 4): 1	(0, 5): 1	(0, 6): 2	(0, 7): 1	(0, 8): 1	
+(1, 0): 1	(1, 1): 1	(1, 2): 0	(1, 3): 0	(1, 4): 1	(1, 5): -1	(1, 6): 2	(1, 7): -1	(1, 8): 1	
+(2, 0): -1	(2, 1): 1	(2, 2): 1	(2, 3): 1	(2, 4): 2	(2, 5): 1	(2, 6): 2	(2, 7): 1	(2, 8): 1	
+(3, 0): 1	(3, 1): 1	(3, 2): 2	(3, 3): -1	(3, 4): 2	(3, 5): 0	(3, 6): 0	(3, 7): 0	(3, 8): 0	
+(4, 0): 0	(4, 1): 0	(4, 2): 2	(4, 3): -1	(4, 4): 2	(4, 5): 0	(4, 6): 0	(4, 7): 0	(4, 8): 0	
+(5, 0): 1	(5, 1): 2	(5, 2): 3	(5, 3): 2	(5, 4): 1	(5, 5): 0	(5, 6): 0	(5, 7): 0	(5, 8): 0	
+(6, 0): 1	(6, 1): -1	(6, 2): -1	(6, 3): 3	(6, 4): 2	(6, 5): 1	(6, 6): 1	(6, 7): 0	(6, 8): 0	
+(7, 0): 1	(7, 1): 3	(7, 2): -1	(7, 3): -1	(7, 4): 2	(7, 5): -1	(7, 6): 1	(7, 7): 0	(7, 8): 0	
+(8, 0): 0	(8, 1): 1	(8, 2): 2	(8, 3): 2	(8, 4): 2	(8, 5): 1	(8, 6): 1	(8, 7): 0	(8, 8): 0	
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GameUtilSpace.GameUtil:PrintCellValue () (at Assets/Scripts/GameUtil.cs:120)
+GameStateController:Start () (at Assets/Scripts/GameStateController.cs:136)
+
+(Filename: Assets/Scripts/GameUtil.cs Line: 120)
+
+(0, 0):Undiscovered	(0, 1):Undiscovered	(0, 2):Undiscovered	(0, 3):Undiscovered	(0, 4):Undiscovered	(0, 5):Undiscovered	(0, 6):Undiscovered	(0, 7):Undiscovered	(0, 8):Undiscovered	
+(1, 0):Undiscovered	(1, 1):Undiscovered	(1, 2):Undiscovered	(1, 3):Undiscovered	(1, 4):Undiscovered	(1, 5):Undiscovered	(1, 6):Undiscovered	(1, 7):Undiscovered	(1, 8):Undiscovered	
+(2, 0):Undiscovered	(2, 1):Undiscovered	(2, 2):Undiscovered	(2, 3):Undiscovered	(2, 4):Undiscovered	(2, 5):Undiscovered	(2, 6):Undiscovered	(2, 7):Undiscovered	(2, 8):Undiscovered	
+(3, 0):Undiscovered	(3, 1):Undiscovered	(3, 2):Undiscovered	(3, 3):Undiscovered	(3, 4):Undiscovered	(3, 5):Undiscovered	(3, 6):Undiscovered	(3, 7):Undiscovered	(3, 8):Undiscovered	
+(4, 0):Undiscovered	(4, 1):Undiscovered	(4, 2):Undiscovered	(4, 3):Undiscovered	(4, 4):Undiscovered	(4, 5):Undiscovered	(4, 6):Undiscovered	(4, 7):Undiscovered	(4, 8):Undiscovered	
+(5, 0):Undiscovered	(5, 1):Undiscovered	(5, 2):Undiscovered	(5, 3):Undiscovered	(5, 4):Undiscovered	(5, 5):Undiscovered	(5, 6):Undiscovered	(5, 7):Undiscovered	(5, 8):Undiscovered	
+(6, 0):Undiscovered	(6, 1):Undiscovered	(6, 2):Undiscovered	(6, 3):Undiscovered	(6, 4):Undiscovered	(6, 5):Undiscovered	(6, 6):Undiscovered	(6, 7):Undiscovered	(6, 8):Undiscovered	
+(7, 0):Undiscovered	(7, 1):Undiscovered	(7, 2):Undiscovered	(7, 3):Undiscovered	(7, 4):Undiscovered	(7, 5):Undiscovered	(7, 6):Undiscovered	(7, 7):Undiscovered	(7, 8):Undiscovered	
+(8, 0):Undiscovered	(8, 1):Undiscovered	(8, 2):Undiscovered	(8, 3):Undiscovered	(8, 4):Undiscovered	(8, 5):Undiscovered	(8, 6):Undiscovered	(8, 7):Undiscovered	(8, 8):Undiscovered	
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GameUtilSpace.GameUtil:PrintCellDisplay () (at Assets/Scripts/GameUtil.cs:94)
+GameStateController:Start () (at Assets/Scripts/GameStateController.cs:137)
+
+(Filename: Assets/Scripts/GameUtil.cs Line: 94)
+
+=== flag ===
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:215)
+GameStateController:Start () (at Assets/Scripts/GameStateController.cs:142)
+
+(Filename: Assets/Scripts/GameUtil.cs Line: 215)
+
+Evaluate(cell)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:218)
+GameStateController:Start () (at Assets/Scripts/GameStateController.cs:142)
+
+(Filename: Assets/Scripts/GameUtil.cs Line: 218)
+
+foreach (TwoDPoint nextStepCell in nextStep)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:238)
+GameStateController:Start () (at Assets/Scripts/GameStateController.cs:142)
+
+(Filename: Assets/Scripts/GameUtil.cs Line: 238)
+
+(0, 1)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:239)
+GameStateController:Start () (at Assets/Scripts/GameStateController.cs:142)
+
+(Filename: Assets/Scripts/GameUtil.cs Line: 239)
+
+=== flag ===
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:215)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:240)
+GameStateController:Start () (at Assets/Scripts/GameStateController.cs:142)
+
+(Filename: Assets/Scripts/GameUtil.cs Line: 215)
+
+Evaluate(cell)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:218)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:240)
+GameStateController:Start () (at Assets/Scripts/GameStateController.cs:142)
+
+(Filename: Assets/Scripts/GameUtil.cs Line: 218)
+
+foreach (TwoDPoint nextStepCell in nextStep)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:238)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:240)
+GameStateController:Start () (at Assets/Scripts/GameStateController.cs:142)
+
+(Filename: Assets/Scripts/GameUtil.cs Line: 238)
+
+(0, 0)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:239)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:240)
+GameStateController:Start () (at Assets/Scripts/GameStateController.cs:142)
+
+(Filename: Assets/Scripts/GameUtil.cs Line: 239)
+
+targetArea.Count == 0
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:212)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:240)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:240)
+GameStateController:Start () (at Assets/Scripts/GameStateController.cs:142)
+
+(Filename: Assets/Scripts/GameUtil.cs Line: 212)
+
+foreach (TwoDPoint nextStepCell in nextStep)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:238)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:240)
+GameStateController:Start () (at Assets/Scripts/GameStateController.cs:142)
+
+(Filename: Assets/Scripts/GameUtil.cs Line: 238)
+
+(0, 1)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:239)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:240)
+GameStateController:Start () (at Assets/Scripts/GameStateController.cs:142)
+
+(Filename: Assets/Scripts/GameUtil.cs Line: 239)
+
+targetArea.Count == 0
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:212)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:240)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:240)
+GameStateController:Start () (at Assets/Scripts/GameStateController.cs:142)
+
+(Filename: Assets/Scripts/GameUtil.cs Line: 212)
+
+foreach (TwoDPoint nextStepCell in nextStep)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:238)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:240)
+GameStateController:Start () (at Assets/Scripts/GameStateController.cs:142)
+
+(Filename: Assets/Scripts/GameUtil.cs Line: 238)
+
+(0, 2)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:239)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:240)
+GameStateController:Start () (at Assets/Scripts/GameStateController.cs:142)
+
+(Filename: Assets/Scripts/GameUtil.cs Line: 239)
+
+targetArea.Count == 0
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:212)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:240)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:240)
+GameStateController:Start () (at Assets/Scripts/GameStateController.cs:142)
+
+(Filename: Assets/Scripts/GameUtil.cs Line: 212)
+
+foreach (TwoDPoint nextStepCell in nextStep)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:238)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:240)
+GameStateController:Start () (at Assets/Scripts/GameStateController.cs:142)
+
+(Filename: Assets/Scripts/GameUtil.cs Line: 238)
+
+(1, 0)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:239)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:240)
+GameStateController:Start () (at Assets/Scripts/GameStateController.cs:142)
+
+(Filename: Assets/Scripts/GameUtil.cs Line: 239)
+
+=== flag ===
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:215)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:240)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:240)
+GameStateController:Start () (at Assets/Scripts/GameStateController.cs:142)
+
+(Filename: Assets/Scripts/GameUtil.cs Line: 215)
+
+else
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:226)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:240)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:240)
+GameStateController:Start () (at Assets/Scripts/GameStateController.cs:142)
+
+(Filename: Assets/Scripts/GameUtil.cs Line: 226)
+
+foreach (TwoDPoint nextStepCell in nextStep)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:238)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:240)
+GameStateController:Start () (at Assets/Scripts/GameStateController.cs:142)
+
+(Filename: Assets/Scripts/GameUtil.cs Line: 238)
+
+(1, 1)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:239)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:240)
+GameStateController:Start () (at Assets/Scripts/GameStateController.cs:142)
+
+(Filename: Assets/Scripts/GameUtil.cs Line: 239)
+
+=== flag ===
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:215)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:240)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:240)
+GameStateController:Start () (at Assets/Scripts/GameStateController.cs:142)
+
+(Filename: Assets/Scripts/GameUtil.cs Line: 215)
+
+else
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:226)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:240)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:240)
+GameStateController:Start () (at Assets/Scripts/GameStateController.cs:142)
+
+(Filename: Assets/Scripts/GameUtil.cs Line: 226)
+
+foreach (TwoDPoint nextStepCell in nextStep)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:238)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:240)
+GameStateController:Start () (at Assets/Scripts/GameStateController.cs:142)
+
+(Filename: Assets/Scripts/GameUtil.cs Line: 238)
+
+(1, 2)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:239)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:240)
+GameStateController:Start () (at Assets/Scripts/GameStateController.cs:142)
+
+(Filename: Assets/Scripts/GameUtil.cs Line: 239)
+
+targetArea.Count == 0
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:212)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:240)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:240)
+GameStateController:Start () (at Assets/Scripts/GameStateController.cs:142)
+
+(Filename: Assets/Scripts/GameUtil.cs Line: 212)
+
+foreach (TwoDPoint nextStepCell in nextStep)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:238)
+GameStateController:Start () (at Assets/Scripts/GameStateController.cs:142)
+
+(Filename: Assets/Scripts/GameUtil.cs Line: 238)
+
+(0, 2)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:239)
+GameStateController:Start () (at Assets/Scripts/GameStateController.cs:142)
+
+(Filename: Assets/Scripts/GameUtil.cs Line: 239)
+
+targetArea.Count == 0
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:212)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:240)
+GameStateController:Start () (at Assets/Scripts/GameStateController.cs:142)
+
+(Filename: Assets/Scripts/GameUtil.cs Line: 212)
+
+foreach (TwoDPoint nextStepCell in nextStep)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:238)
+GameStateController:Start () (at Assets/Scripts/GameStateController.cs:142)
+
+(Filename: Assets/Scripts/GameUtil.cs Line: 238)
+
+(0, 3)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:239)
+GameStateController:Start () (at Assets/Scripts/GameStateController.cs:142)
+
+(Filename: Assets/Scripts/GameUtil.cs Line: 239)
+
+=== flag ===
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:215)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:240)
+GameStateController:Start () (at Assets/Scripts/GameStateController.cs:142)
+
+(Filename: Assets/Scripts/GameUtil.cs Line: 215)
+
+Evaluate(cell)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:218)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:240)
+GameStateController:Start () (at Assets/Scripts/GameStateController.cs:142)
+
+(Filename: Assets/Scripts/GameUtil.cs Line: 218)
+
+foreach (TwoDPoint nextStepCell in nextStep)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:238)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:240)
+GameStateController:Start () (at Assets/Scripts/GameStateController.cs:142)
+
+(Filename: Assets/Scripts/GameUtil.cs Line: 238)
+
+(0, 2)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:239)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:240)
+GameStateController:Start () (at Assets/Scripts/GameStateController.cs:142)
+
+(Filename: Assets/Scripts/GameUtil.cs Line: 239)
+
+targetArea.Count == 0
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:212)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:240)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:240)
+GameStateController:Start () (at Assets/Scripts/GameStateController.cs:142)
+
+(Filename: Assets/Scripts/GameUtil.cs Line: 212)
+
+foreach (TwoDPoint nextStepCell in nextStep)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:238)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:240)
+GameStateController:Start () (at Assets/Scripts/GameStateController.cs:142)
+
+(Filename: Assets/Scripts/GameUtil.cs Line: 238)
+
+(0, 3)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:239)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:240)
+GameStateController:Start () (at Assets/Scripts/GameStateController.cs:142)
+
+(Filename: Assets/Scripts/GameUtil.cs Line: 239)
+
+targetArea.Count == 0
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:212)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:240)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:240)
+GameStateController:Start () (at Assets/Scripts/GameStateController.cs:142)
+
+(Filename: Assets/Scripts/GameUtil.cs Line: 212)
+
+foreach (TwoDPoint nextStepCell in nextStep)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:238)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:240)
+GameStateController:Start () (at Assets/Scripts/GameStateController.cs:142)
+
+(Filename: Assets/Scripts/GameUtil.cs Line: 238)
+
+(0, 4)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:239)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:240)
+GameStateController:Start () (at Assets/Scripts/GameStateController.cs:142)
+
+(Filename: Assets/Scripts/GameUtil.cs Line: 239)
+
+=== flag ===
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:215)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:240)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:240)
+GameStateController:Start () (at Assets/Scripts/GameStateController.cs:142)
+
+(Filename: Assets/Scripts/GameUtil.cs Line: 215)
+
+else
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:226)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:240)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:240)
+GameStateController:Start () (at Assets/Scripts/GameStateController.cs:142)
+
+(Filename: Assets/Scripts/GameUtil.cs Line: 226)
+
+foreach (TwoDPoint nextStepCell in nextStep)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:238)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:240)
+GameStateController:Start () (at Assets/Scripts/GameStateController.cs:142)
+
+(Filename: Assets/Scripts/GameUtil.cs Line: 238)
+
+(1, 2)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:239)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:240)
+GameStateController:Start () (at Assets/Scripts/GameStateController.cs:142)
+
+(Filename: Assets/Scripts/GameUtil.cs Line: 239)
+
+targetArea.Count == 0
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:212)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:240)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:240)
+GameStateController:Start () (at Assets/Scripts/GameStateController.cs:142)
+
+(Filename: Assets/Scripts/GameUtil.cs Line: 212)
+
+foreach (TwoDPoint nextStepCell in nextStep)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:238)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:240)
+GameStateController:Start () (at Assets/Scripts/GameStateController.cs:142)
+
+(Filename: Assets/Scripts/GameUtil.cs Line: 238)
+
+(1, 3)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:239)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:240)
+GameStateController:Start () (at Assets/Scripts/GameStateController.cs:142)
+
+(Filename: Assets/Scripts/GameUtil.cs Line: 239)
+
+=== flag ===
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:215)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:240)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:240)
+GameStateController:Start () (at Assets/Scripts/GameStateController.cs:142)
+
+(Filename: Assets/Scripts/GameUtil.cs Line: 215)
+
+Evaluate(cell)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:218)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:240)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:240)
+GameStateController:Start () (at Assets/Scripts/GameStateController.cs:142)
+
+(Filename: Assets/Scripts/GameUtil.cs Line: 218)
+
+foreach (TwoDPoint nextStepCell in nextStep)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:238)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:240)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:240)
+GameStateController:Start () (at Assets/Scripts/GameStateController.cs:142)
+
+(Filename: Assets/Scripts/GameUtil.cs Line: 238)
+
+(0, 2)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:239)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:240)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:240)
+GameStateController:Start () (at Assets/Scripts/GameStateController.cs:142)
+
+(Filename: Assets/Scripts/GameUtil.cs Line: 239)
+
+targetArea.Count == 0
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:212)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:240)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:240)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:240)
+GameStateController:Start () (at Assets/Scripts/GameStateController.cs:142)
+
+(Filename: Assets/Scripts/GameUtil.cs Line: 212)
+
+foreach (TwoDPoint nextStepCell in nextStep)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:238)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:240)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:240)
+GameStateController:Start () (at Assets/Scripts/GameStateController.cs:142)
+
+(Filename: Assets/Scripts/GameUtil.cs Line: 238)
+
+(0, 3)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:239)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:240)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:240)
+GameStateController:Start () (at Assets/Scripts/GameStateController.cs:142)
+
+(Filename: Assets/Scripts/GameUtil.cs Line: 239)
+
+targetArea.Count == 0
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:212)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:240)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:240)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:240)
+GameStateController:Start () (at Assets/Scripts/GameStateController.cs:142)
+
+(Filename: Assets/Scripts/GameUtil.cs Line: 212)
+
+foreach (TwoDPoint nextStepCell in nextStep)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:238)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:240)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:240)
+GameStateController:Start () (at Assets/Scripts/GameStateController.cs:142)
+
+(Filename: Assets/Scripts/GameUtil.cs Line: 238)
+
+(0, 4)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:239)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:240)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:240)
+GameStateController:Start () (at Assets/Scripts/GameStateController.cs:142)
+
+(Filename: Assets/Scripts/GameUtil.cs Line: 239)
+
+=== flag ===
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:215)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:240)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:240)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:240)
+GameStateController:Start () (at Assets/Scripts/GameStateController.cs:142)
+
+(Filename: Assets/Scripts/GameUtil.cs Line: 215)
+
+else
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:226)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:240)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:240)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:240)
+GameStateController:Start () (at Assets/Scripts/GameStateController.cs:142)
+
+(Filename: Assets/Scripts/GameUtil.cs Line: 226)
+
+foreach (TwoDPoint nextStepCell in nextStep)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:238)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:240)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:240)
+GameStateController:Start () (at Assets/Scripts/GameStateController.cs:142)
+
+(Filename: Assets/Scripts/GameUtil.cs Line: 238)
+
+(1, 2)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:239)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:240)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:240)
+GameStateController:Start () (at Assets/Scripts/GameStateController.cs:142)
+
+(Filename: Assets/Scripts/GameUtil.cs Line: 239)
+
+targetArea.Count == 0
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:212)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:240)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:240)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:240)
+GameStateController:Start () (at Assets/Scripts/GameStateController.cs:142)
+
+(Filename: Assets/Scripts/GameUtil.cs Line: 212)
+
+foreach (TwoDPoint nextStepCell in nextStep)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:238)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:240)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:240)
+GameStateController:Start () (at Assets/Scripts/GameStateController.cs:142)
+
+(Filename: Assets/Scripts/GameUtil.cs Line: 238)
+
+(1, 3)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:239)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:240)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:240)
+GameStateController:Start () (at Assets/Scripts/GameStateController.cs:142)
+
+(Filename: Assets/Scripts/GameUtil.cs Line: 239)
+
+targetArea.Count == 0
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:212)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:240)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:240)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:240)
+GameStateController:Start () (at Assets/Scripts/GameStateController.cs:142)
+
+(Filename: Assets/Scripts/GameUtil.cs Line: 212)
+
+foreach (TwoDPoint nextStepCell in nextStep)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:238)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:240)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:240)
+GameStateController:Start () (at Assets/Scripts/GameStateController.cs:142)
+
+(Filename: Assets/Scripts/GameUtil.cs Line: 238)
+
+(1, 4)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:239)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:240)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:240)
+GameStateController:Start () (at Assets/Scripts/GameStateController.cs:142)
+
+(Filename: Assets/Scripts/GameUtil.cs Line: 239)
+
+=== flag ===
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:215)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:240)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:240)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:240)
+GameStateController:Start () (at Assets/Scripts/GameStateController.cs:142)
+
+(Filename: Assets/Scripts/GameUtil.cs Line: 215)
+
+else
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:226)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:240)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:240)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:240)
+GameStateController:Start () (at Assets/Scripts/GameStateController.cs:142)
+
+(Filename: Assets/Scripts/GameUtil.cs Line: 226)
+
+foreach (TwoDPoint nextStepCell in nextStep)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:238)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:240)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:240)
+GameStateController:Start () (at Assets/Scripts/GameStateController.cs:142)
+
+(Filename: Assets/Scripts/GameUtil.cs Line: 238)
+
+(2, 2)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:239)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:240)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:240)
+GameStateController:Start () (at Assets/Scripts/GameStateController.cs:142)
+
+(Filename: Assets/Scripts/GameUtil.cs Line: 239)
+
+=== flag ===
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:215)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:240)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:240)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:240)
+GameStateController:Start () (at Assets/Scripts/GameStateController.cs:142)
+
+(Filename: Assets/Scripts/GameUtil.cs Line: 215)
+
+else
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:226)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:240)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:240)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:240)
+GameStateController:Start () (at Assets/Scripts/GameStateController.cs:142)
+
+(Filename: Assets/Scripts/GameUtil.cs Line: 226)
+
+foreach (TwoDPoint nextStepCell in nextStep)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:238)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:240)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:240)
+GameStateController:Start () (at Assets/Scripts/GameStateController.cs:142)
+
+(Filename: Assets/Scripts/GameUtil.cs Line: 238)
+
+(2, 3)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:239)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:240)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:240)
+GameStateController:Start () (at Assets/Scripts/GameStateController.cs:142)
+
+(Filename: Assets/Scripts/GameUtil.cs Line: 239)
+
+=== flag ===
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:215)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:240)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:240)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:240)
+GameStateController:Start () (at Assets/Scripts/GameStateController.cs:142)
+
+(Filename: Assets/Scripts/GameUtil.cs Line: 215)
+
+else
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:226)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:240)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:240)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:240)
+GameStateController:Start () (at Assets/Scripts/GameStateController.cs:142)
+
+(Filename: Assets/Scripts/GameUtil.cs Line: 226)
+
+foreach (TwoDPoint nextStepCell in nextStep)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:238)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:240)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:240)
+GameStateController:Start () (at Assets/Scripts/GameStateController.cs:142)
+
+(Filename: Assets/Scripts/GameUtil.cs Line: 238)
+
+(2, 4)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:239)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:240)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:240)
+GameStateController:Start () (at Assets/Scripts/GameStateController.cs:142)
+
+(Filename: Assets/Scripts/GameUtil.cs Line: 239)
+
+=== flag ===
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:215)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:240)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:240)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:240)
+GameStateController:Start () (at Assets/Scripts/GameStateController.cs:142)
+
+(Filename: Assets/Scripts/GameUtil.cs Line: 215)
+
+else
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:226)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:240)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:240)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:240)
+GameStateController:Start () (at Assets/Scripts/GameStateController.cs:142)
+
+(Filename: Assets/Scripts/GameUtil.cs Line: 226)
+
+foreach (TwoDPoint nextStepCell in nextStep)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:238)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:240)
+GameStateController:Start () (at Assets/Scripts/GameStateController.cs:142)
+
+(Filename: Assets/Scripts/GameUtil.cs Line: 238)
+
+(1, 4)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:239)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:240)
+GameStateController:Start () (at Assets/Scripts/GameStateController.cs:142)
+
+(Filename: Assets/Scripts/GameUtil.cs Line: 239)
+
+=== flag ===
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:215)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:240)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:240)
+GameStateController:Start () (at Assets/Scripts/GameStateController.cs:142)
+
+(Filename: Assets/Scripts/GameUtil.cs Line: 215)
+
+else
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:226)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:240)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:240)
+GameStateController:Start () (at Assets/Scripts/GameStateController.cs:142)
+
+(Filename: Assets/Scripts/GameUtil.cs Line: 226)
+
+foreach (TwoDPoint nextStepCell in nextStep)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:238)
+GameStateController:Start () (at Assets/Scripts/GameStateController.cs:142)
+
+(Filename: Assets/Scripts/GameUtil.cs Line: 238)
+
+(1, 1)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:239)
+GameStateController:Start () (at Assets/Scripts/GameStateController.cs:142)
+
+(Filename: Assets/Scripts/GameUtil.cs Line: 239)
+
+=== flag ===
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:215)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:240)
+GameStateController:Start () (at Assets/Scripts/GameStateController.cs:142)
+
+(Filename: Assets/Scripts/GameUtil.cs Line: 215)
+
+else
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:226)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:240)
+GameStateController:Start () (at Assets/Scripts/GameStateController.cs:142)
+
+(Filename: Assets/Scripts/GameUtil.cs Line: 226)
+
+foreach (TwoDPoint nextStepCell in nextStep)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:238)
+GameStateController:Start () (at Assets/Scripts/GameStateController.cs:142)
+
+(Filename: Assets/Scripts/GameUtil.cs Line: 238)
+
+(1, 2)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:239)
+GameStateController:Start () (at Assets/Scripts/GameStateController.cs:142)
+
+(Filename: Assets/Scripts/GameUtil.cs Line: 239)
+
+targetArea.Count == 0
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:212)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:240)
+GameStateController:Start () (at Assets/Scripts/GameStateController.cs:142)
+
+(Filename: Assets/Scripts/GameUtil.cs Line: 212)
+
+foreach (TwoDPoint nextStepCell in nextStep)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:238)
+GameStateController:Start () (at Assets/Scripts/GameStateController.cs:142)
+
+(Filename: Assets/Scripts/GameUtil.cs Line: 238)
+
+(1, 3)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:239)
+GameStateController:Start () (at Assets/Scripts/GameStateController.cs:142)
+
+(Filename: Assets/Scripts/GameUtil.cs Line: 239)
+
+targetArea.Count == 0
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:212)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:240)
+GameStateController:Start () (at Assets/Scripts/GameStateController.cs:142)
+
+(Filename: Assets/Scripts/GameUtil.cs Line: 212)
+
+foreach (TwoDPoint nextStepCell in nextStep)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:238)
+GameStateController:Start () (at Assets/Scripts/GameStateController.cs:142)
+
+(Filename: Assets/Scripts/GameUtil.cs Line: 238)
+
+(2, 1)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:239)
+GameStateController:Start () (at Assets/Scripts/GameStateController.cs:142)
+
+(Filename: Assets/Scripts/GameUtil.cs Line: 239)
+
+=== flag ===
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:215)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:240)
+GameStateController:Start () (at Assets/Scripts/GameStateController.cs:142)
+
+(Filename: Assets/Scripts/GameUtil.cs Line: 215)
+
+else
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:226)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:240)
+GameStateController:Start () (at Assets/Scripts/GameStateController.cs:142)
+
+(Filename: Assets/Scripts/GameUtil.cs Line: 226)
+
+foreach (TwoDPoint nextStepCell in nextStep)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:238)
+GameStateController:Start () (at Assets/Scripts/GameStateController.cs:142)
+
+(Filename: Assets/Scripts/GameUtil.cs Line: 238)
+
+(2, 2)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:239)
+GameStateController:Start () (at Assets/Scripts/GameStateController.cs:142)
+
+(Filename: Assets/Scripts/GameUtil.cs Line: 239)
+
+=== flag ===
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:215)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:240)
+GameStateController:Start () (at Assets/Scripts/GameStateController.cs:142)
+
+(Filename: Assets/Scripts/GameUtil.cs Line: 215)
+
+else
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:226)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:240)
+GameStateController:Start () (at Assets/Scripts/GameStateController.cs:142)
+
+(Filename: Assets/Scripts/GameUtil.cs Line: 226)
+
+foreach (TwoDPoint nextStepCell in nextStep)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:238)
+GameStateController:Start () (at Assets/Scripts/GameStateController.cs:142)
+
+(Filename: Assets/Scripts/GameUtil.cs Line: 238)
+
+(2, 3)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:239)
+GameStateController:Start () (at Assets/Scripts/GameStateController.cs:142)
+
+(Filename: Assets/Scripts/GameUtil.cs Line: 239)
+
+=== flag ===
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:215)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:240)
+GameStateController:Start () (at Assets/Scripts/GameStateController.cs:142)
+
+(Filename: Assets/Scripts/GameUtil.cs Line: 215)
+
+else
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:226)
+GameUtilSpace.GameUtil:Expand (CellSpace.Cell) (at Assets/Scripts/GameUtil.cs:240)
+GameStateController:Start () (at Assets/Scripts/GameStateController.cs:142)
+
+(Filename: Assets/Scripts/GameUtil.cs Line: 226)
+
+(0, 0):Discovered	(0, 1):Discovered	(0, 2):Discovered	(0, 3):Discovered	(0, 4):Discovered	(0, 5):Undiscovered	(0, 6):Undiscovered	(0, 7):Undiscovered	(0, 8):Undiscovered	
+(1, 0):Discovered	(1, 1):Discovered	(1, 2):Discovered	(1, 3):Discovered	(1, 4):Discovered	(1, 5):Undiscovered	(1, 6):Undiscovered	(1, 7):Undiscovered	(1, 8):Undiscovered	
+(2, 0):Undiscovered	(2, 1):Discovered	(2, 2):Discovered	(2, 3):Discovered	(2, 4):Discovered	(2, 5):Undiscovered	(2, 6):Undiscovered	(2, 7):Undiscovered	(2, 8):Undiscovered	
+(3, 0):Undiscovered	(3, 1):Undiscovered	(3, 2):Undiscovered	(3, 3):Undiscovered	(3, 4):Undiscovered	(3, 5):Undiscovered	(3, 6):Undiscovered	(3, 7):Undiscovered	(3, 8):Undiscovered	
+(4, 0):Undiscovered	(4, 1):Undiscovered	(4, 2):Undiscovered	(4, 3):Undiscovered	(4, 4):Undiscovered	(4, 5):Undiscovered	(4, 6):Undiscovered	(4, 7):Undiscovered	(4, 8):Undiscovered	
+(5, 0):Undiscovered	(5, 1):Undiscovered	(5, 2):Undiscovered	(5, 3):Undiscovered	(5, 4):Undiscovered	(5, 5):Undiscovered	(5, 6):Undiscovered	(5, 7):Undiscovered	(5, 8):Undiscovered	
+(6, 0):Undiscovered	(6, 1):Undiscovered	(6, 2):Undiscovered	(6, 3):Undiscovered	(6, 4):Undiscovered	(6, 5):Undiscovered	(6, 6):Undiscovered	(6, 7):Undiscovered	(6, 8):Undiscovered	
+(7, 0):Undiscovered	(7, 1):Undiscovered	(7, 2):Undiscovered	(7, 3):Undiscovered	(7, 4):Undiscovered	(7, 5):Undiscovered	(7, 6):Undiscovered	(7, 7):Undiscovered	(7, 8):Undiscovered	
+(8, 0):Undiscovered	(8, 1):Undiscovered	(8, 2):Undiscovered	(8, 3):Undiscovered	(8, 4):Undiscovered	(8, 5):Undiscovered	(8, 6):Undiscovered	(8, 7):Undiscovered	(8, 8):Undiscovered	
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GameUtilSpace.GameUtil:PrintCellDisplay () (at Assets/Scripts/GameUtil.cs:94)
+GameStateController:Start () (at Assets/Scripts/GameStateController.cs:143)
+
+(Filename: Assets/Scripts/GameUtil.cs Line: 94)
+
+Asset Pipeline Refresh: Total: 0.085 seconds - Initiated by RefreshV2(AllowForceSynchronousImport)
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
+Loaded scene 'Temp/__Backupscenes/0.backup'
+	Deserialize:            1.077 ms
+	Integration:            13.639 ms
+	Integration of assets:  0.004 ms
+	Thread Wait Time:       0.006 ms
+	Total Operation Time:   14.726 ms
+Unloading 144 unused Assets / (29.7 KB). Loaded Objects now: 5242.
+Memory consumption went from 129.4 MB to 129.4 MB.
+Total: 7.710285 ms (FindLiveObjects: 0.286697 ms CreateObjectMapping: 0.075241 ms MarkObjects: 7.233681 ms  DeleteObjects: 0.112791 ms)
+
+Opening Default ApplicationThis tool has been deprecated, use 'gio open' instead.
+See 'gio help open' for more info.
+
+Asset Pipeline Refresh: Total: 0.098 seconds - Initiated by RefreshV2(AllowForceSynchronousImport)

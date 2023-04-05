@@ -126,46 +126,23 @@ public class GameStateController : MonoBehaviour {
         // GameBoard gameBoard = new GameBoard(board);
         */
         GameBoard gameBoard = new GameBoard(metaInfo);
-        // DebugLog(gameBoard, "gameBoard");
 
         GameUtil.SetGameBoard(gameBoard);
-
-        TwoDPoint point1 = new TwoDPoint(1, 2);
-        DebugLog(gameBoard.GetCell(point1), "gameBoard.GetCell(point1)");
-
         GameUtil.InitiateMine(metaInfo.mineNumber);
-        // DebugLog(string.Join(", ", mineDictionary.Keys));
-
-        Dictionary<TwoDPoint, Cell> cellBoard = gameBoard.GetCellBoard();
-        StringBuilder sb = new StringBuilder();
-        int counter = 0;
-        foreach(TwoDPoint position in gameBoard.GetCellBoard().Keys) {
-            counter++;
-            sb.Append(position.ToString() + ":" + cellBoard[position].GetCellValue());
-            if (counter % metaInfo.rowNumber == 0) {
-                sb.Append("\n");
-            }
-            // DebugLog(position, "position");
-            // DebugLog(cellBoard[position].cellValue, "cellBoard[position].cellValue");
-        }
-        Debug.Log(sb.ToString());
-
-        Dictionary<TwoDPoint, Cell> cellBoard2 = gameBoard.GetCellBoard();
-        StringBuilder sb2 = new StringBuilder();
-        int counter2 = 0;
-        foreach(TwoDPoint position in cellBoard2.Keys) {
-            counter2++;
-            sb2.Append(position.ToString() + ":" + cellBoard2[position].GetCellValue());
-            if (counter2 % metaInfo.rowNumber == 0) {
-                sb2.Append("\n");
-            }
-            // DebugLog(position, "position");
-            // DebugLog(cellBoard[position].cellValue, "cellBoard[position].cellValue");
-        }
-        Debug.Log(sb2.ToString());
-
+        GameUtil.PrintCellValue();
+        GameUtil.PrintCellDisplay();
+        GameUtil.PrintCellCorrect();
         GameUtil.StartGame();
-        GameUtil.GetCellBoard();
+        GameUtil.PrintCellValue();
+        GameUtil.PrintCellDisplay();
+
+        Dictionary<TwoDPoint, Cell> cellBoard = GameUtil.GetCellBoard();
+        TwoDPoint position = new TwoDPoint(1, 2);
+
+        GameUtil.Expand(cellBoard[position]);
+        GameUtil.PrintCellDisplay();
+
+
 
         /*
         TwoDPoint point1 = new TwoDPoint(1, 2);
