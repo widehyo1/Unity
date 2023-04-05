@@ -85,8 +85,22 @@ namespace GameUtilSpace {
             Debug.Log(sb.ToString());
         }
 
+        public static void PrintCellValue(Dictionary<TwoDPoint, Cell> cellBoard) {
+            Debug.Log("=== PrintCellValue(Dictionary<TwoDPoint, Cell> cellBoard) start ===");
+            StringBuilder sb = new StringBuilder();
+            int counter = 0;
+            foreach (TwoDPoint position in cellBoard.Keys) {
+                counter++;
+                sb.Append(position.ToString() + ":" + cellBoard[position].GetCellValue());
+                if (counter % (board.boardX + 1) == 0) {
+                    sb.Append("\n");
+                }
+            }
+            Debug.Log(sb.ToString());
+        }
+
         public static void PrintCellValue() {
-            Debug.Log("=== PrintCellValue start ===");
+            Debug.Log("=== PrintCellValue() start ===");
             StringBuilder sb = new StringBuilder();
             int counter = 0;
             foreach (TwoDPoint position in cellBoard.Keys) {
@@ -347,6 +361,8 @@ namespace GameUtilSpace {
         */
 
         private static void ComputeCell(Dictionary<TwoDPoint, Cell> mineDictionary) {
+            Debug.Log("=== ComputeCell start ===");
+            PrintCellValue();
 
             Dictionary<TwoDPoint, Cell> cloneBoard = cellBoard.DeepClone();
 
@@ -358,15 +374,22 @@ namespace GameUtilSpace {
                 foreach (TwoDPoint position in mineDetectionArea) {
 
                     if (mineDictionary.TryGetValue(position, out Cell cell)) {
+                        Debug.Log("===================================================");
+                        Debug.Log("mineDictionary.TryGetValue(position, out Cell cell)");
+                        Debug.Log(cell.ToString());
+                        Debug.Log("===================================================");
                         continue;
                     } else {
                         cloneBoard[position].SetCellValueForward();
                     }
                 }
             }
-
             gameBoard.SetCellBoard(cloneBoard);
+            cellBoard = gameBoard.GetCellBoard();
 
+            PrintCellValue();
+
+            Debug.Log("=== ComputeCell end ===");
         }
 
         private static Dictionary<TwoDPoint, Cell> PlantMine(int mineNumber) {
@@ -410,9 +433,12 @@ namespace GameUtilSpace {
                 Debug.Log(counter);
             }
 
-            Debug.Log(cloneBoard);
+            PrintCellValue(cellBoard);
+            Debug.Log("=== Flag ===");
+            PrintCellValue(cloneBoard);
 
             gameBoard.SetCellBoard(cloneBoard);
+            cellBoard = gameBoard.GetCellBoard();
             return mineDictionary;
         }
     }
